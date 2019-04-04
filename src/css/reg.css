@@ -1,0 +1,38 @@
+form{
+    width: 600px;
+    overflow: hidden;
+    padding:0 100px;
+}
+form p{
+    position: relative;
+    padding: 6px 0;
+}
+form label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    line-height: 30px;
+}
+form input[type="text"]{
+    width: 240px;
+    border: 1px solid #dcdcdc;
+    height: 35px;
+}
+form p .ver_code{
+    position: absolute;
+    display: inline-block;
+    height: 35px;
+    padding:5px 5px;
+    top: 6px;
+    left: 273px;
+    background: #000;
+    color: #fff;
+}
+form button{
+    width: 348px;
+    height: 42px;
+    background: red;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 5px;
+}
