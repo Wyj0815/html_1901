@@ -1,6 +1,26 @@
 jQuery(function($){
-    var $input =  $("#reg_form").find("input");
-    $(".register").on("click",function(event){
+    var $input =  $(".register_inner").find("input");
+    var show_num = [];
+    draw(show_num);
+    var yonghu;
+    $input.first().on("blur",function(){
+        console.log($(this).val())
+        $.ajax({
+            url: "../api/reg.php",
+            data: {uname : $(this).val()},
+            success: function (res) {
+                yonghu = res;
+                if(yonghu){
+                    alert("用户名已存在");
+                }
+            }
+        });
+    });
+    $("#replace_img").on("click",function(){
+        draw(show_num);
+    });
+    $(".btnSubmit").on("click",function(){
+        var yanzhengma = show_num.join("");
         var ipt = "";
         $input.each(function () { 
             if($(this).val() == ""){
@@ -10,23 +30,35 @@ jQuery(function($){
         });
         if(ipt){
             alert(ipt);
-            event.preventDefault();
-        }
-        else if(!/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/.test($input.first().val())){
+            return false;
+        }else if(!/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/.test($input.first().val())){
             alert("手机号格式不正确！");
-            event.preventDefault();
-        }
-        else if($input.eq(1).val() != $(".ver_code").text()){
+            return false;
+        }else if($input.eq(1).val() != yanzhengma){
             alert("验证码不正确！");
-            event.preventDefault();
-        }
-        else if(!/^\w{6,22}$/.test( $input.eq(2).val())){
+            return false;
+        }else if(!/^\w{6,22}$/.test( $input.eq(2).val())){
             alert("设置密码格式不正确！");
-            event.preventDefault();
-        }
-        else if($input.eq(3).val() !=  $input.eq(2).val()){
+            return false;
+        }else if($input.eq(3).val() !=  $input.eq(2).val()){
             alert("两次密码不一致！");
-            event.preventDefault();
+            return false;
+        }else if(yonghu){
+            alert("用户名已存在！");
+            return false;
+        }else{
+            $.ajax({
+                type: "post",
+                url: "../api/reg_add.php",
+                data:  {uname : $input.first().val(), upsd : $input.eq(2).val()},
+                success: function (res) {
+                    if(res){
+                        location.href = '../index1.html?uname='+ $input.first().val();
+                    }
+                }
+            });
+            return false;
         }
+        draw(show_num);
     });
 });

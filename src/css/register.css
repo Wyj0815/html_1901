@@ -1,0 +1,259 @@
+.meet{
+	border-color: #3c763d;
+	z-index: 3;
+}
+.register_box{
+	overflow: hidden;
+	margin-top: 24px;
+	background: #fff;
+	border:6px solid rgba(199,199,199,0.7);
+}
+.tabForm{
+	position: relative;
+	float:left;
+	width: 600px;
+	height: 566px;
+	overflow: hidden;
+	border-right: 1px solid #dcdcdc;
+}
+.adBox{
+	margin-top: 83px;
+  	margin-left: 35px;
+	width:300px;
+	height:356px;
+	text-align: center;
+   
+}
+.adBox img{
+	width: 300px;
+	height: 356px;
+}
+.tabForm_btn{
+	height: 35px;
+	width: 515px;
+	margin:33px auto 0 auto; 
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+.tabForm_btn .icon{
+	display: inline-block;
+	
+	height: 24px;
+}
+.tabForm_btn li{
+	position: relative;
+	float: left;
+	width: 257px;
+	height: 23px;
+	text-align: center;
+	font-size: 14px;
+}
+.actBd{
+	display: none;
+	position: absolute;
+	left: 0 ;
+	bottom: -17px;
+	width: 100%;
+	height: 7px;
+	background: url(../img/loginIcon.gif) no-repeat left -37px;
+}
+.tab_active .actBd{
+	display: block;
+}
+.tabForm_btn li:first-child{
+	border-right: 1px solid #ddd;
+}
+.tabForm_btn a{
+	display: block;
+	width: 100%;
+}
+.mobileIcon{
+	width: 15px;
+	background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+
+.mailIcon{
+	width: 19px;
+	background: url(../img/loginIcon.gif) no-repeat -413px -5px;
+}
+.formBox{
+	position: absolute;
+	width: 200%;
+}
+.register_inner{
+	
+	width: 600px;
+	padding-top: 34px;
+	overflow: hidden;
+}
+.mgnAuto{
+	width: 400px;
+	margin: 0 auto;
+}
+.mgTop12{
+	position: relative;
+	margin-top: 12px;
+}
+.mgTop12 .ver_code{
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    top: 8px;
+    left: 245px;
+}
+.text_box .regCodeBtn{
+    margin-left: 12px;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    padding: 0px 8px;
+    /* color: #646464; */
+    float: right;
+    width: 75px;
+    font-size: 12px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 3px;
+        margin-top: 7px;
+}
+.btn{
+	background: #fff;
+	background: linear-gradient(#fff,#f3f3f3);
+	background: -webkit-linear-gradient(#fff,#f3f3f3);
+	background: -ms-linear-gradient(#fff,#f3f3f3);
+	background: -moz-linear-gradient(#fff,#f3f3f3);
+	background: -o-linear-gradient(#fff,#f3f3f3);
+	cursor: pointer;
+}
+
+.text_box .mobileIcon{
+	display: inline-block;
+	width: 15px;
+	height: 24px;
+	background: url(../img/loginIcon.gif) no-repeat -387px -5px;
+}
+.text_box .codeText{
+    margin-left: 96px;
+    vertical-align: middle;
+    width: 144px;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #ddd;
+    text-indent: 0;
+    text-align: center;
+    color: #646464;
+    /* float: right; */
+    margin-top: -46px;
+}
+.xieyi{
+	height:40px;
+	line-height: 40px;
+}
+.codeBox{
+	height:54px;
+	
+}
+.codeBox a{
+	margin-left: 5px;
+	height: 54px;
+	line-height: 54px;
+}
+.codeText_s{
+	width:169px;
+}
+.codeText_s input{
+	width: 100px;
+}
+.codePic{
+	margin-left: 10px;
+	width: 124px;
+	height: 52px;
+	border: 1px solid #ddd;
+}
+.regBtn{
+	display: block;
+	width:348px;
+	height: 42px;
+	text-align: center;;
+	line-height: 42px;
+	color: #fff;
+	font-size: 14px;
+	border:1px solid #a8221f;
+	border-radius: 2px;
+	background: #fe4a49; 
+	background: linear-gradient(#ff6261,#fa413f);
+	background: -webkit-linear-gradient(#ff6261,#fa413f);
+	background: -ms-linear-gradient(#ff6261,#fa413f);
+	background: -moz-linear-gradient(#ff6261,#fa413f);
+	background: -o-linear-gradient(#ff6261,#fa413f);
+	-webkit-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+	-ms-box-shadow: inset 0 0 1px rgba(255,255,255,0.9); 
+	-moz-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+	-o-box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+	box-shadow: inset 0 0 1px rgba(255,255,255,0.9);
+	cursor: pointer;
+}
+.regBtn:active{	
+	background: #fe4a49; 
+	background: linear-gradient(#fa413f,#ff6261);
+	background: -webkit-linear-gradient(#fa413f,#ff6261);
+	background: -ms-linear-gradient(#fa413f,#ff6261);
+	background: -moz-linear-gradient(#fa413f,#ff6261);
+	background: -o-linear-gradient(#fa413f,#ff6261);
+}
+button.regBtn:focus{
+	outline: none;
+}
+.text_box {
+    position: relative;
+    margin-top: -1px;
+    width: 348px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+     border: 0px;
+      font-family:"΢���ź�";
+}
+.text_box input {
+    
+        width:240px;
+        border: 1px solid #dcdcdc;
+        height:35px;
+    }
+.text_box label {
+    display: inline-block;
+    margin-left: 18px;
+    color: #000;
+    width: 73px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.codePic {
+    margin-left: 10px;
+    width: 70px;
+    height: 35px;
+    border: 1px solid #ddd;
+    float: right;
+    margin-top: -43px;
+    margin-right: 63px;
+}
+
+.codeBox a {
+    margin-left: 5px;
+    height: 54px;
+    line-height: 54px;
+    float: right;
+   	position: absolute;
+}
+    .error {
+    position: absolute;
+    right: 19px;
+    bottom: 0;
+    color: #a94442;
+    height: 52px;
+    font-size: 12px;
+    line-height: 52px;
+}
