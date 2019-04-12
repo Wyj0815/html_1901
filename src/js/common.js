@@ -231,3 +231,49 @@ function draw(show_num) {
 		context.stroke();
 	}
 }
+
+function dl(){
+	var cookName = Cookie.getCookie('uname');
+    if(cookName != ""){
+        $("#login").hide();
+        $("#quit").show();
+        $("#login_name").text(cookName);
+    }
+    $(".tuichu").on("click",function(){
+        $("#quit").hide();
+        $("#login").show();
+        Cookie.removeCookie("uname","/");  
+        return false;
+	});
+	setInterval(function(){
+        $(".friendLinkList").animate({top:"-32px"},1500,function(){
+            $(".friendLinkList").animate({top:"0px"},1500);
+        });
+    },4000);
+
+    $(".app_p").hover(function(){
+        $(".appImg").show();
+    },function(){
+        $(".appImg").hide();
+    });
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top > 800){
+            $("#fixNav").show();
+        }else{
+            $("#fixNav").hide();
+        }
+	});
+	$.ajax({
+		url: "api/ready_car.php",
+		data: {user:cookName},
+		success: function (res) {
+            var obj = JSON.parse(res)
+            var count = 0;
+            $.each(obj,function(idx,item) { 
+                count += Number(item.count);
+            });
+            $(".count").text(count);
+		}
+	});
+}

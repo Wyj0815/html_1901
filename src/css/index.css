@@ -1,0 +1,395 @@
+body {
+  background: #f5f5f5;
+}
+
+#banner {
+  background: #000;
+}
+
+#banner .banner {
+  position: relative;
+}
+
+#banner .banner #output {
+  z-index: 1;
+}
+
+#banner .banner .shine {
+  position: absolute;
+  width: 190px;
+  height: 470px;
+  overflow: hidden;
+  opacity: 0.9;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  padding-top: 15px;
+}
+
+#banner .banner .shine a img {
+  width: 190px;
+  height: 210px;
+  display: block;
+  margin-bottom: 20px;
+  opacity: .8;
+  transition: all 1s;
+}
+
+.baozhang {
+  line-height: 45px;
+}
+
+.baozhang span {
+  float: left;
+  padding: 0 40px;
+  color: #9B9B9B;
+  font-size: 14px;
+}
+
+.baozhang a {
+  color: #E01F35;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.baozhang a img {
+  margin-right: 11px;
+}
+
+#content {
+  background: url(../img/index/bj.jpg) no-repeat center;
+}
+
+#content .content {
+  background: #fff;
+  padding-top: 26px;
+}
+
+#content .content a:first-of-type {
+  width: 582px;
+}
+
+#content .content a:first-of-type p #a_name {
+  width: 420px;
+}
+
+#content .content a {
+  float: left;
+  width: 282px;
+  border: 1px solid #ccc;
+  margin-right: 18px;
+  margin-bottom: 21px;
+  transition: 0.5s all;
+}
+
+#content .content a img {
+  width: 100%;
+  height: 261px;
+}
+
+#content .content a p {
+  padding: 0 15px;
+  overflow: hidden;
+  line-height: 61px;
+}
+
+#content .content a p #a_name {
+  float: left;
+  width: 180px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#content .content a p #a_price {
+  float: right;
+  color: #CC0210;
+}
+
+#content .content a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product li {
+  transition: 0.5s all;
+}
+
+.product li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product .pr_top {
+  line-height: 56px;
+  overflow: hidden;
+}
+
+.product .pr_top h3 {
+  float: left;
+  font-size: 20px;
+}
+
+.product .pr_top a {
+  float: right;
+  margin-right: 20px;
+}
+
+.product .pr_top a em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 900;
+}
+
+.product .pr_left {
+  width: 240px;
+}
+
+.product .pr_left a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.product .pr_left a img {
+  width: 100%;
+  height: 300px;
+}
+
+.product .pr_right {
+  width: 960px;
+}
+
+.product .pr_right li {
+  float: left;
+  margin-left: 17px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.product .pr_right li a {
+  background: #fff;
+  display: inline-block;
+  width: 219px;
+  padding: 0 15px;
+}
+
+.product .pr_right li a div, .product .pr_right li a p {
+  height: 20px;
+}
+
+.product .pr_right li a div {
+  width: 64px;
+  margin: 0 auto 10px;
+  text-align: center;
+  color: #FFF;
+  background: #FF2D32;
+  line-height: 20px;
+}
+
+.product .pr_right li a img {
+  height: 190px;
+}
+
+.product .pr_right li a p {
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 24px;
+}
+
+.product .pr_right li a span {
+  display: block;
+  color: #FF2C00;
+  text-align: center;
+  margin-bottom: 43px;
+  line-height: 21px;
+}
+
+.tuijian .tj_top {
+  line-height: 56px;
+}
+
+.tuijian .tj_top span {
+  font-size: 20px;
+}
+
+.tuijian .swiper-container {
+  position: relative;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li {
+  width: 225px;
+  height: 315px;
+  float: left;
+  text-align: center;
+  margin-right: 14px;
+  background: #fff;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li a img {
+  width: 200px;
+  height: 200px;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li a .s_name {
+  color: #333;
+  padding: 10px 0 5px;
+  font-size: 13px;
+  padding: 10px 0;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li a .s_price, .tuijian .swiper-container .swiper-wrapper ul li a .s_pinglun {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li a .s_price {
+  color: #FF2C00;
+}
+
+.tuijian .swiper-container .swiper-wrapper ul li a .s_pinglun {
+  color: #757575;
+}
+
+.tuijian .swiper-container .swiper-button-prev, .tuijian .swiper-container .swiper-button-next {
+  position: absolute;
+  top: 40px;
+  width: 34px;
+  height: 22px;
+  color: #B5BDC7;
+  border: 1px solid #E0E0E0;
+}
+
+.tuijian .swiper-container .swiper-button-prev {
+  left: 1110px;
+  background: url(../img/index/leftsj.png);
+}
+
+.tuijian .swiper-container .swiper-button-next {
+  right: 22px;
+  background: url(../img/index/rightsj.png);
+}
+
+.jiuyou h3 {
+  line-height: 58px;
+  font-size: 20px;
+}
+
+.jiuyou ul li {
+  float: left;
+  width: 282px;
+  height: 392px;
+  margin-right: 18px;
+  top: 0;
+  transition: all .4s;
+  background: #fff;
+}
+
+.jiuyou ul li a img {
+  width: 100%;
+  height: 204px;
+}
+
+.jiuyou ul li a div {
+  padding: 22px 27px;
+  font-size: 13px;
+  line-height: 23px;
+  color: #333;
+}
+
+.jiuyou ul li a div .j_where {
+  padding: 5px 0;
+  width: 100%;
+  display: inline-block;
+  color: #B0B0B0;
+  font-size: 12px;
+}
+
+.jiuyou ul li a div p .j_name, .jiuyou ul li a div p .j_price {
+  height: 18px;
+  line-height: 17px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.jiuyou ul li a div p .j_name {
+  padding-right: 15px;
+  width: 140px;
+  border-right: 2px solid #a2a2a2;
+}
+
+.jiuyou ul li a div p .j_price {
+  padding-left: 10px;
+  color: #FF6700;
+  width: 50px;
+}
+
+.jiuyou ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shiping h3 {
+  line-height: 58px;
+  font-size: 20px;
+}
+
+.shiping ul li {
+  float: left;
+  width: 282px;
+  height: 258px;
+  margin-right: 18px;
+  transition: all .4s;
+  background: #fff;
+  position: relative;
+}
+
+.shiping ul li a {
+  text-align: center;
+}
+
+.shiping ul li a img {
+  width: 100%;
+  height: 170px;
+}
+
+.shiping ul li a div {
+  padding: 20px 0 5px;
+}
+
+.shiping ul li a i {
+  display: block;
+  width: 31px;
+  height: 20px;
+  border: 2px solid #FFF;
+  position: absolute;
+  top: 139px;
+  left: 19px;
+  border-radius: 15px;
+  color: #FFF;
+  transition: all .4s;
+  line-height: 15px;
+  font-size: 14px;
+  padding-left: 3px;
+}
+
+.shiping ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shiping ul li:hover i {
+  background: #FF7B21;
+  border: 2px solid transparent;
+}

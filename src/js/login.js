@@ -2,8 +2,6 @@ jQuery(function($){
     var show_num = [];
     draw(show_num);
     var $autologin = $("#autologin");
-    var date = new Date();
-    date.setDate(date.getDate() + 7);
 
     var cook_uname = Cookie.getCookie("uname");
     var cook_upsd = Cookie.getCookie("upsd");
@@ -15,7 +13,8 @@ jQuery(function($){
             data: {uname:cook_uname,upsd:cook_upsd},
             success: function (res) {
                 if(res){
-                    location.href = '../index1.html?uname='+cook_uname;
+                    c
+                    location.href = '../index1.html?';
                 }
             }
         });
@@ -38,10 +37,11 @@ jQuery(function($){
                         $("#loginCode").show();
                     }else{
                         if($autologin[0].checked){
-                            Cookie.setCookie("uname",_name,date);
-                            Cookie.setCookie("upsd",_psd,date);
+                            Cookie.removeCookie("uname","/");
+                            Cookie.removeCookie("upsd","/");
                         }
-                        location.href = '../index1.html?uname='+_name;
+                        Cookie.setCookie('uname',_name,"",'/');
+                        location.href = '../index1.html?';
                     }
                 }else{
                     console.log(!yanzheng);
@@ -53,10 +53,11 @@ jQuery(function($){
                             draw(show_num);
                         }else{
                             if($autologin[0].checked){
-                                Cookie.setCookie("uname",_name,date);
-                                Cookie.setCookie("upsd",_psd,date);
+                                Cookie.removeCookie("uname","/");
+                                Cookie.removeCookie("upsd","/");
                             }
-                            location.href = '../index1.html?uname='+_name;
+                            Cookie.setCookie('uname',_name,"",'/');
+                            location.href = '../index1.html?';
                         }
                     }
                 }

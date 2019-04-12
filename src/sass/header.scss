@@ -1,0 +1,318 @@
+#fixNav{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 50px;
+    background: rgba(221,39,39,.95);
+    z-index: 99;
+    .fixNav{
+        div{
+            padding-top: 5px;
+            img{
+                height: 40px;
+            }
+        }
+        form{
+            padding-top: 9px;
+            margin-left: 60px;
+            input[type=text]{
+                width: 565px;
+                height: 39px;
+                line-height: 33px;
+                text-indent: 10px;
+                border: 3px solid #c40000;
+                font-size: 14px;
+                border-radius: 3px 0px 0px 3px;
+            }
+            input[type=button]{
+                width: 86px;
+                height: 39px;
+                background: #c40000;
+                color: #fff;
+                line-height: 39px;
+                border: none;
+                font-size: 16px;
+            }
+        }
+    }
+}
+#topNav{
+    background-color: #3E3A39;
+    .topNav{
+        position: relative;
+        color: #ccc;
+        font-size: 13px;
+        line-height: 31px;
+        .app{
+            p{
+                i{
+                    display: inline-block;
+                    font-size: 9px;
+                    transition: all 1s;
+                    img{
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+                span{
+                    margin: 0 8px;
+                }
+            }
+            p:hover{
+                i{
+                    transform: rotateZ(180deg);
+                }
+            }
+            .appImg{
+                display: none;
+                position: absolute;  
+                top: 37px;
+                box-shadow: 0 0 3px rgba(0,0,0,.6);
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+                span{
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border: 6px solid;
+                    top: -12px;
+                    left: 12px;
+                    border-color: transparent transparent #fff transparent;
+                }
+            }
+        }
+        ul{
+            li{
+                float: left;
+                #login,#quit{
+                    a{
+                        border: 0;
+                        color: yellow;
+                        margin: 0 5px;
+                        padding: 0;
+                    }
+                }
+                a{
+                    border-left: 1px solid #ccc;
+                    padding: 0 24px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+.top{
+    background: #fff;
+    .sousuo{
+        padding-top: 29px;
+        a{
+            display: block;
+            float: left;
+        }
+        .logo{
+            padding-top: 9px;
+            margin-right: 59px;
+        }
+        .s_center{
+            padding-top: 4px;
+            margin-left: 80px;
+            margin-right: 93px;
+            form{
+                input[type=text]{
+                    width: 353px;
+                    height: 39px;
+                    border: 3px solid #C40000;
+                    border-right: 0;
+                    padding-left: 10px;
+                }
+                input[type=button]{
+                    width: 89px;
+                    height: 39px;
+                    background: #C40000;
+                    color: #fff;
+                }
+            }
+            ul{
+                padding-top: 6px;
+                li{
+                    float: left; 
+                    a{
+                        font-size: 11px;
+                        padding: 0 7px;
+                        border-right: 1px solid #ccc;
+                        color: #C40000;
+                    }
+                }
+            }
+        }
+        .shopcar{
+            padding-top: 4px;
+            position: relative;
+            a{
+                display: block;
+                width: 141px;
+                border: 1px solid #CCCCCC;
+                font-size: 13px;
+                line-height: 36px;
+                background-color: #F9F9F9;
+                color: #666666;
+                padding-left: 7px;
+                span{
+                    color: #CCCCCC;
+                    font-size: 16px;
+                    font-weight: 900;
+                }
+            }
+            .count{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: url(../img/index/qipao.png);
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                top: -14px;
+                left: 8px;
+                font-weight: 900;
+            }
+        }
+    }
+    .nav{
+        padding-top: 14px;
+        .xiala{
+            .nav_duoji{
+                display: block;
+                background: #CC0210;
+                line-height: 44px;
+                padding: 0 34px;
+                font-size: 19px;
+                color: #fff;
+                span{
+                    margin-right: 17px;
+                }
+            }
+            .erji{
+                display: none;
+                position: absolute;
+                z-index: 3;
+                >li{
+                    background: rgba(204,2,16,.9);
+                    padding-left: 32px;
+                    position: relative;
+                    width: 195px;
+                    a{
+                        color: #fff;
+                        line-height: 47.5px;
+                        img{
+                            margin-right: 12px;
+                        }
+                        em{
+                            position: absolute;
+                            top: -2px;
+                            right: 20px;
+                            color: #DD5A63;
+                            font-weight: 900;
+                            font-size: 35px;
+                        }
+                    }
+                    .sanji{
+                        display: none;
+                        width: 1020px;
+                        height: 470px;
+                        position: absolute;
+                        background: #FFF;
+                        left: 195px;
+                        top: 0;
+                        border-top: 1px solid #E5E5E5;
+                        .sj_fl{
+                            width: 730px;
+                            padding-left: 10px;
+                            height: 470px;
+                            background: #fff;
+                            div{
+                                
+                                h3{
+                                    width: 100%;
+                                    line-height: 40px;
+                                    font-size: 14px;
+                                    border-bottom: 1px solid #EAEAEA;
+                                    text-align: left;
+                                    color: #3B3B3B;
+                                    font-weight: 900;
+                                }
+                                ul{
+                                    padding:20px 0;
+                                    overflow: hidden;
+                                    li{
+                                        float: left;
+                                        background: none;
+                                        a{
+                                            padding: 0 10px;
+                                            color: #595959;
+                                            font-size: 14px;
+                                            border-right: 1px solid #BFBFBF;
+                                            line-height: 15px;
+                                        }
+                                        .last{
+                                            border: 0 none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .sj_fr{
+                            width: 280px;
+                            height: 470px;
+                            background: #F6F6F6;
+                            padding: 19px 17px;
+                            box-sizing: border-box;
+                            div{
+                                a{
+                                    float: left;
+                                    border-right: 1px solid #EAEAEA;
+                                    border-bottom: 1px solid #EAEAEA;
+                                    img{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                >li:hover{
+                    .sanji{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .xiala:hover{
+            .erji{
+                display: block;
+            }
+        }
+        .ziye{
+            li{
+                float: left;
+                padding: 0 25px;
+                line-height: 44px;
+                position: relative;
+                font-size: 15px;
+                i{
+                    display: block;
+                    position: absolute;
+                    width: 33px;
+                    height: 20px;
+                    background: url(../img/index/hoticon.gif) no-repeat -62px 1px;
+                    top: -2px;
+                    left: 70px;
+                }
+            }
+            .last{
+                padding-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,251 @@
+body{
+    font-size: 12px;
+    color: #666;
+}
+.cent{
+    width: 960px;
+    margin: 0 auto;
+}
+.cart_title{
+    padding-top: 10px;
+    h1{
+        height: 46px;
+        padding-left: 5px;
+        width: 100px;
+        line-height: 46px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    div{
+        color: #CA0808;
+        line-height: 46px;
+        padding-left: 10px;
+        font-weight: 900;
+    }
+}
+.car_box{
+    height: auto;
+    border: 1px solid #EAEAEA;
+    border-top: 2px solid #C90809;
+    dt{
+        border-bottom: 1px solid #EAEAEA;
+        color: #999;
+        height: 31px;
+        line-height: 31px;
+        overflow: hidden;
+        padding-left: 15px;
+        span{
+            display: inline-block;
+        }
+        .check_all{
+            width: 113px;
+        }
+        .cb_r1 {
+            width: 300px;
+        }
+        .cb_r2 {
+            width: 80px;
+        }
+        .cb_r2,.cb_r3,.cb_r4,.cb_r5,.cb_r6{
+            text-align: center;
+        }
+        .cb_r3 {
+            width: 86px;
+        }
+        .cb_r4 {
+            width: 150px;
+        }
+        .cb_r5 {
+            width: 70px;
+        }
+        .cb_r6 {
+            width: 95px;
+        }
+    }
+    dd{
+        // height: auto;
+        max-height: 355px;
+        overflow: auto;
+        div{
+            padding:5px 15px;
+            ul{
+                border-bottom: 1px dotted #D3D3D3;
+                li{
+                    float: left;
+                    line-height: 60px;
+                }
+                .ck{
+                    width: 48px;
+                }
+                .img_name{
+                    img{
+                        padding-bottom: 10px;
+                        width: 50px;
+                        height: 60px;
+                    }
+                    p{
+                        width: 300px;
+                        padding-top: 15px;
+                        margin-left: 10px;
+                        line-height: 16px;
+                    }
+                }
+                .dangjia{
+                    width: 100px;
+                    text-align: center;
+                }
+                .youhui{
+                    width: 80px;
+                    color: red;
+                    text-align: center;
+                }
+                .yun{
+                    margin:0 40px;
+                    .jianBtn,.jiaBtn{
+                        width: 25px;
+                        line-height: 25px;
+                        font-size: 15px;
+                        border: 1px solid #EAEAEA;
+                        cursor: pointer;
+                        background: #fff;
+                    }
+                    .shuLiang{
+                        text-align: center;
+                        color: #666;
+                        line-height: 25px;
+                        width: 37px;
+                        border: 1px solid #EAEAEA;
+                    }
+                }
+                .zongjia{
+                    width: 55px;
+                    color: #CA0809;
+                    text-align: center;
+                }
+                .caozuo{
+                    width: 100px;
+                    padding-left: 11px;
+                    text-align: center;
+                    a{
+                        margin-left:10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.jiesuan{
+    border: 1px solid #EAEAEA;
+    border-top: 0;
+    .juan{
+        background-color: #F6F6F6;
+        border-bottom: 1px solid #EAEAEA;
+        color: #443c3c;
+        padding: 0 15px;
+        line-height: 42px;
+    }
+    ul{
+        height: 60px;
+        padding: 20px 20px 0 15px;
+        li{
+            float: left;
+        }
+        .dele_ck,.clear_car{
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .clear_car{
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .total{
+            float: right;
+            span{
+                color: #CA0809;
+                font-weight: 700;
+                font-size: 27px;
+            }
+        }
+    }
+}
+.go_jiesuan{
+    height: 60px;
+    padding-top: 20px;
+    .go_list{
+        float: left;
+        height: 35px;
+        width: 100px;
+        background: url(../css/img/bg_new.gif) no-repeat;
+        background-position: -124px -102px;
+    }
+    span{
+        float: left;
+        padding-left: 20px;
+        margin-left: 15px;
+        line-height: 35px;
+        background: url(http://static.gjw.com/order/cart/img/bg_new.gif) no-repeat -423px -417px;
+    }
+    .go_money{
+        float: right;
+        background: url(../css/img/bg_new.gif) no-repeat;
+        background-position: 0 -102px;
+        height: 35px;
+        width: 124px
+    }
+}
+.xuyao{
+    border: 1px solid #EAEAEA;
+    dt{
+        background-color: #F8F8F8;
+        line-height: 38px;
+        font-size: 18px;
+        font-weight: 900;
+        color: #999;
+        padding-left: 15px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    dd{
+        background-color: #FFF;
+        height: auto;
+        padding: 20px 0;
+        ul{
+            li{
+                width: 159px;
+                padding: 0 30px;
+                margin-bottom: 20px;
+                float: left;
+                border-left: 1px dotted #ccc;
+                a{
+                    display: block;
+                    color: #666;
+                    text-align: center;
+                    img{
+                        width: 100%;
+                        height: 100px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        width: 100px;
+                        line-height: 20px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space:nowrap;
+                    }
+                }
+                >p{
+                    line-height: 20px;
+                    color: #C90809;
+                    padding-top: 5px;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                >span{
+                    display: block;
+                    background: url(../css/img/bg_new.gif) no-repeat -262px -209px;
+                    height: 29px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

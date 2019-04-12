@@ -38,6 +38,10 @@ a {
     text-decoration:none;
     color: #000;
 }
+a:hover{
+    color: #C40000;
+    cursor: pointer;
+}
 
 
 
@@ -75,7 +79,7 @@ s,i,em{
 
 /*公共类*/
 .con {  /*内容、版心 提取 */
-    width: 960px;
+    width: 1200px;
     margin:0 auto;
 }
 .fl {

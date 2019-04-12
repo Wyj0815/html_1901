@@ -53,7 +53,8 @@ jQuery(function($){
                 data:  {uname : $input.first().val(), upsd : $input.eq(2).val()},
                 success: function (res) {
                     if(res){
-                        location.href = '../index1.html?uname='+ $input.first().val();
+                        Cookie.setCookie('uname',$input.first().val(),'','/');
+                        location.href = '../index1.html?';
                     }
                 }
             });

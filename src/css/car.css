@@ -1,0 +1,297 @@
+body {
+  font-size: 12px;
+  color: #666;
+}
+
+.cent {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.cart_title {
+  padding-top: 10px;
+}
+
+.cart_title h1 {
+  height: 46px;
+  padding-left: 5px;
+  width: 100px;
+  line-height: 46px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.cart_title div {
+  color: #CA0808;
+  line-height: 46px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.car_box {
+  height: auto;
+  border: 1px solid #EAEAEA;
+  border-top: 2px solid #C90809;
+}
+
+.car_box dt {
+  border-bottom: 1px solid #EAEAEA;
+  color: #999;
+  height: 31px;
+  line-height: 31px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.car_box dt span {
+  display: inline-block;
+}
+
+.car_box dt .check_all {
+  width: 113px;
+}
+
+.car_box dt .cb_r1 {
+  width: 300px;
+}
+
+.car_box dt .cb_r2 {
+  width: 80px;
+}
+
+.car_box dt .cb_r2, .car_box dt .cb_r3, .car_box dt .cb_r4, .car_box dt .cb_r5, .car_box dt .cb_r6 {
+  text-align: center;
+}
+
+.car_box dt .cb_r3 {
+  width: 86px;
+}
+
+.car_box dt .cb_r4 {
+  width: 150px;
+}
+
+.car_box dt .cb_r5 {
+  width: 70px;
+}
+
+.car_box dt .cb_r6 {
+  width: 95px;
+}
+
+.car_box dd {
+  max-height: 355px;
+  overflow: auto;
+}
+
+.car_box dd div {
+  padding: 5px 15px;
+}
+
+.car_box dd div ul {
+  border-bottom: 1px dotted #D3D3D3;
+}
+
+.car_box dd div ul li {
+  float: left;
+  line-height: 60px;
+}
+
+.car_box dd div ul .ck {
+  width: 48px;
+}
+
+.car_box dd div ul .img_name img {
+  padding-bottom: 10px;
+  width: 50px;
+  height: 60px;
+}
+
+.car_box dd div ul .img_name p {
+  width: 300px;
+  padding-top: 15px;
+  margin-left: 10px;
+  line-height: 16px;
+}
+
+.car_box dd div ul .dangjia {
+  width: 100px;
+  text-align: center;
+}
+
+.car_box dd div ul .youhui {
+  width: 80px;
+  color: red;
+  text-align: center;
+}
+
+.car_box dd div ul .yun {
+  margin: 0 40px;
+}
+
+.car_box dd div ul .yun .jianBtn, .car_box dd div ul .yun .jiaBtn {
+  width: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  border: 1px solid #EAEAEA;
+  cursor: pointer;
+  background: #fff;
+}
+
+.car_box dd div ul .yun .shuLiang {
+  text-align: center;
+  color: #666;
+  line-height: 25px;
+  width: 37px;
+  border: 1px solid #EAEAEA;
+}
+
+.car_box dd div ul .zongjia {
+  width: 55px;
+  color: #CA0809;
+  text-align: center;
+}
+
+.car_box dd div ul .caozuo {
+  width: 100px;
+  padding-left: 11px;
+  text-align: center;
+}
+
+.car_box dd div ul .caozuo a {
+  margin-left: 10px;
+}
+
+.jiesuan {
+  border: 1px solid #EAEAEA;
+  border-top: 0;
+}
+
+.jiesuan .juan {
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #EAEAEA;
+  color: #443c3c;
+  padding: 0 15px;
+  line-height: 42px;
+}
+
+.jiesuan ul {
+  height: 60px;
+  padding: 20px 20px 0 15px;
+}
+
+.jiesuan ul li {
+  float: left;
+}
+
+.jiesuan ul .dele_ck, .jiesuan ul .clear_car {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.jiesuan ul .clear_car {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.jiesuan ul .total {
+  float: right;
+}
+
+.jiesuan ul .total span {
+  color: #CA0809;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.go_jiesuan {
+  height: 60px;
+  padding-top: 20px;
+}
+
+.go_jiesuan .go_list {
+  float: left;
+  height: 35px;
+  width: 100px;
+  background: url(../css/img/bg_new.gif) no-repeat;
+  background-position: -124px -102px;
+}
+
+.go_jiesuan span {
+  float: left;
+  padding-left: 20px;
+  margin-left: 15px;
+  line-height: 35px;
+  background: url(http://static.gjw.com/order/cart/img/bg_new.gif) no-repeat -423px -417px;
+}
+
+.go_jiesuan .go_money {
+  float: right;
+  background: url(../css/img/bg_new.gif) no-repeat;
+  background-position: 0 -102px;
+  height: 35px;
+  width: 124px;
+}
+
+.xuyao {
+  border: 1px solid #EAEAEA;
+}
+
+.xuyao dt {
+  background-color: #F8F8F8;
+  line-height: 38px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #999;
+  padding-left: 15px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.xuyao dd {
+  background-color: #FFF;
+  height: auto;
+  padding: 20px 0;
+}
+
+.xuyao dd ul li {
+  width: 159px;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  float: left;
+  border-left: 1px dotted #ccc;
+}
+
+.xuyao dd ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+}
+
+.xuyao dd ul li a img {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.xuyao dd ul li a p {
+  width: 100px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.xuyao dd ul li > p {
+  line-height: 20px;
+  color: #C90809;
+  padding-top: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.xuyao dd ul li > span {
+  display: block;
+  background: url(../css/img/bg_new.gif) no-repeat -262px -209px;
+  height: 29px;
+  width: 100px;
+}

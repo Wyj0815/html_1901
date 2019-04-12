@@ -7,6 +7,7 @@
     if($res->num_rows){
         echo true;
     }
-
+    $res->close();
+    $con->close();
 
 ?>

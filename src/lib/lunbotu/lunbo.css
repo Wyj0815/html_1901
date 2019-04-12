@@ -1,0 +1,12 @@
+ /*插件样式：千万不要写重置样式*/
+.lunbo img{display: block;}
+.lunbo{position:relative;overflow:hidden;}
+.lunbo ul{position:absolute;overflow:hidden;list-style: none;padding:0;margin:0;}
+.lunbo .horizontal li{float:left;}
+.lunbo .faded li{position:absolute;left: 0;top: 0;width: 100%;}
+
+.lunbo .page{position:absolute;left:50%;bottom:0;transform: translateX(-50%); padding:10px;}
+.lunbo .page span{display:inline-block;margin:0 5px;width:21px;height:21px;line-height:21px;font-size: 13px;font-weight: 900; background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.lunbo .page span.active{background-color: rgba(255,0,0,.8);}
+.lunbo .anniu_l{position: absolute;width:20px;height:20px;top: 50%;left:3%;transform: translateY(-10px);font-size: 20px;};
+.lunbo .anniu_r{position: absolute;width:20px;height:20px;top: 50%;right:3%;transform: translateY(-10px);font-size: 20px;};

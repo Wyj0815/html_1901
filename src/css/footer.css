@@ -1,0 +1,107 @@
+#w_footer {
+  background: url(../img/index/footer_bg.gif);
+}
+
+#w_footer .w_footer {
+  font-size: 13px;
+}
+
+#w_footer .w_footer .ft_top {
+  padding: 7px 0;
+  border-bottom: 2px solid #787878;
+}
+
+#w_footer .w_footer .ft_top .dianhua {
+  padding-top: 20px;
+}
+
+#w_footer .w_footer .ft_top .ftt_kefu {
+  float: left;
+  padding: 61px 0 0 30px;
+}
+
+#w_footer .w_footer .ft_top .xiangqing ul {
+  color: #fff;
+  padding-top: 15px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+#w_footer .w_footer .ft_top .xiangqing img {
+  width: 104px;
+  height: 104px;
+}
+
+#w_footer .w_footer .footer_link {
+  padding: 50px 0 35px 100px;
+}
+
+#w_footer .w_footer .footer_link dl {
+  float: left;
+  width: 170px;
+}
+
+#w_footer .w_footer .footer_link dl dt {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}
+
+#w_footer .w_footer .footer_link dl dd a {
+  line-height: 24px;
+  color: #a9a9a9;
+}
+
+#fuwu {
+  background: #fff;
+}
+
+#fuwu .fuwu {
+  font-size: 13px;
+  text-align: center;
+}
+
+#fuwu .fuwu p {
+  line-height: 24px;
+}
+
+#fuwu .fuwu .footer_lunbo {
+  overflow: hidden;
+  position: relative;
+  height: 32px;
+}
+
+#fuwu .fuwu .footer_lunbo ul {
+  position: absolute;
+  line-height: 32px;
+}
+
+#fuwu .fuwu .footer_lunbo ul li a {
+  padding: 0 10px;
+  border-right: 1px solid;
+}
+
+#fuwu .fuwu .footer_lunbo ul li .last {
+  border: 0;
+}
+
+#fuwu .fuwu .dibu {
+  padding-top: 10px;
+}
+
+#fuwu .fuwu .dibu a {
+  display: inline-block;
+  width: 110px;
+  height: 48px;
+  margin-right: 10px;
+  background: url(http://static.gjw.com/product/20161021/img/aut_06.jpg) no-repeat;
+}
+
+#fuwu .fuwu .dibu .a2 {
+  background-position: -120px 0;
+}
+
+#fuwu .fuwu .dibu .a3 {
+  background-position: -240px 0;
+}
