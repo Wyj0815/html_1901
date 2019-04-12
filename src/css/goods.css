@@ -1,0 +1,432 @@
+#buybox {
+  background: #F6F4F5;
+}
+
+#buybox .buybox {
+  background: #fff;
+  padding-left: 45px;
+}
+
+#buybox .buybox .bb_top {
+  background: #F6F4F5;
+  font-size: 12px;
+  color: #797979;
+  padding-top: 15px;
+  height: 50px;
+}
+
+#buybox .buybox .bb_top ul li {
+  float: left;
+}
+
+#buybox .buybox .bb_top > a {
+  width: 88px;
+  height: 20px;
+  display: inline-block;
+  background: url(../css/img/zxkf.png);
+}
+
+#buybox .buybox .bb_part {
+  padding-top: 20px;
+  position: relative;
+}
+
+#buybox .buybox .bb_part .glass ul {
+  padding-right: 20px;
+}
+
+#buybox .buybox .bb_part .glass ul .listpic {
+  border: 1px solid #EEEEEE;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 1px;
+}
+
+#buybox .buybox .bb_part .glass ul .listpic img {
+  width: 72px;
+  height: 72px;
+}
+
+#buybox .buybox .bb_part .glass ul .last {
+  margin-bottom: 0;
+}
+
+#buybox .buybox .bb_part .glass .datu {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+
+#buybox .buybox .bb_part .glass .datu img {
+  width: 100%;
+  height: 100%;
+}
+
+#buybox .buybox .bb_part .glass .datu .datuBtn {
+  position: absolute;
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#buybox .buybox .bb_part .glass .glassImg {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: 20px;
+  left: 516px;
+  overflow: hidden;
+  display: none;
+}
+
+#buybox .buybox .bb_part .glass .glassImg img {
+  width: 840px;
+  height: 840px;
+  position: absolute;
+}
+
+#buybox .buybox .bb_part .glass p {
+  line-height: 40px;
+  color: #666666;
+  font-size: 15px;
+}
+
+#buybox .buybox .bb_part .glass p span a {
+  width: 23px;
+  height: 18px;
+  background: url(../img/goods/shareicon.png);
+  display: inline-block;
+}
+
+#buybox .buybox .bb_part .glass p span .weixing {
+  background-position: 0px 18px;
+}
+
+#buybox .buybox .bb_part .glass p span .weibo {
+  background-position: 23px 18px;
+}
+
+#buybox .buybox .bb_part .glass p span .weixing:hover {
+  background-position: 0px 0px;
+}
+
+#buybox .buybox .bb_part .glass p span .weibo:hover {
+  background-position: 23px 0px;
+}
+
+#buybox .buybox .bb_part .itemMsg {
+  width: 599px;
+  margin-left: 40px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_top {
+  margin-bottom: 20px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_top h3 {
+  float: left;
+  line-height: 20px;
+  color: #000;
+  font-weight: 700;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_top a {
+  width: 80px;
+  float: right;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_top a em {
+  background: #a18b7e;
+  color: #fff;
+  border-radius: 4px 4px;
+  padding: 1px 5px;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box {
+  background: #eee;
+  font-size: 12px;
+  color: #666;
+  padding: 10px 0 10px 10px;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box p {
+  padding-top: 10px;
+  line-height: 26px;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box .p_money span {
+  color: #c40000;
+  font-size: 16px;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box .p_money span .ps_money {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box .juan span {
+  padding: 0 10px;
+  color: #df3033;
+  font-size: 12px;
+  border: 1px solid red;
+  margin-right: 5px;
+  background: #ffdedf;
+}
+
+#buybox .buybox .bb_part .itemMsg .price_box .cuxiao span {
+  background: #c40000;
+  color: #fff;
+  line-height: 18px;
+  padding: 0 5px;
+}
+
+#buybox .buybox .bb_part .itemMsg .peison {
+  line-height: 25px;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+#buybox .buybox .bb_part .itemMsg .pay {
+  line-height: 36px;
+  border-top: 1px dashed #c9c9c9;
+  border-bottom: 1px dashed #c9c9c9;
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
+#buybox .buybox .bb_part .itemMsg .pay li {
+  float: left;
+  width: 170px;
+  text-align: center;
+}
+
+#buybox .buybox .bb_part .itemMsg .pay .gz span, #buybox .buybox .bb_part .itemMsg .pay .pj span {
+  color: #c40000;
+  font-weight: 900;
+}
+
+#buybox .buybox .bb_part .itemMsg .pay .jf span {
+  font-weight: 900;
+  color: #228800;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_count {
+  padding-top: 15px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_count > span {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_count .c_count {
+  width: 36px;
+  height: 28px;
+  border: 1px solid #c9c9c9;
+  text-align: center;
+  line-height: 28px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_count .c_suan {
+  width: 20px;
+  margin-left: 15px;
+}
+
+#buybox .buybox .bb_part .itemMsg .msg_count .c_suan span {
+  display: block;
+  width: 18px;
+  height: 12px;
+  border: 1px solid #c9c9c9;
+  text-align: center;
+  line-height: 10px;
+  cursor: pointer;
+  background: #fff;
+  margin-bottom: 3px;
+}
+
+#buybox .buybox .bb_part .itemMsg > p {
+  padding-top: 20px;
+}
+
+#buybox .buybox .bb_part .itemMsg > p span {
+  display: inline-block;
+  width: 180px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#buybox .buybox .bb_part .itemMsg > p .nowbuy {
+  border: 1px solid red;
+  background: #ffdedf;
+  color: #df3033;
+}
+
+#buybox .buybox .bb_part .itemMsg > p .m_addCar {
+  background: #c40000;
+  color: #fff;
+}
+
+#buybox .buybox .tuijian {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#buybox .buybox .tuijian dt {
+  height: 80px;
+  line-height: 80px;
+}
+
+#buybox .buybox .tuijian dd ul li {
+  width: 256px;
+  height: 130px;
+  border: 1px solid #EFEFEF;
+  margin-right: 10px;
+  float: left;
+  font-size: 13px;
+}
+
+#buybox .buybox .tuijian dd ul li a img {
+  width: 125px;
+  height: 130px;
+  float: left;
+}
+
+#buybox .buybox .tuijian dd ul li a div {
+  width: 120px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+#buybox .buybox .tuijian dd ul li a div span {
+  color: red;
+}
+
+#buybox .buybox .tuwen .tw_top {
+  line-height: 60px;
+  border-bottom: 2px solid #EEEEEE;
+  margin-right: 75px;
+}
+
+#buybox .buybox .tuwen .tw_top span {
+  color: #797979;
+  padding: 0 25px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#buybox .buybox .msg_pingjia {
+  padding-top: 40px;
+  padding-right: 75px;
+}
+
+#buybox .buybox .msg_pingjia .pj_all {
+  height: 150px;
+  border: 1px solid #E5E5E5;
+  padding: 25px 40px;
+}
+
+#buybox .buybox .msg_pingjia .pj_all div {
+  float: left;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a1 {
+  width: 229px;
+  line-height: 34px;
+  border-right: 1px solid #E5E5E5;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a1 .a1_p2 {
+  color: #DC3334;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a1 .a1_p2 em {
+  display: inline-block;
+  width: 98px;
+  height: 10px;
+  background: #DB3437;
+  margin-right: 10px;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a1 .a1_p3 {
+  color: #999999;
+  font-size: 13px;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a2 {
+  height: 100%;
+  width: 514px;
+  border-right: 1px solid #E5E5E5;
+  line-height: 34px;
+  padding-left: 45px;
+}
+
+#buybox .buybox .msg_pingjia .pj_all .a3 {
+  height: 100%;
+  line-height: 34px;
+  padding-left: 40px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia {
+  padding-top: 20px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dt {
+  background: #F5F5F5;
+  padding-left: 30px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #666666;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dt .sp1 {
+  margin-right: 630px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dt .sp3 {
+  margin-left: 170px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dd ul li {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 77px;
+  height: 90px;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  font-size: 12px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dd ul li .lis1 {
+  padding-top: 20px;
+  margin-right: 20px;
+  width: 640px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dd ul li .lis_img {
+  padding-top: 20px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dd ul li .lis2 {
+  width: 80px;
+}
+
+#buybox .buybox .msg_pingjia .pingjia dd ul li .lis2 span {
+  display: block;
+}
+
+#buybox .buybox .msg_footer {
+  padding-top: 50px;
+}

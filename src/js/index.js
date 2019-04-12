@@ -70,8 +70,8 @@ jQuery(function($){
     function render2(ele,obj){
         $(ele).html(
             $.map(obj, function (item, idx) {
-                return `<li>
-                            <a href="">
+                return `<li data-id="${item.com_id}">
+                            <a class="go_goods">
                                 <div>${item.com_recom}</div>
                                 <img src="${item.com_img}" alt="">
                                 <p>${item.com_name}</p>
@@ -80,6 +80,7 @@ jQuery(function($){
                         </li>`
             })
         );
+        tiaozhuang();
     }
     function jqajax(){
         $.ajax({
@@ -92,14 +93,23 @@ jQuery(function($){
             }
         });
     }
+    function tiaozhuang(){
+        $(".go_goods").on("click",function(){
+            var id = $(this).parents("li").attr("data-id");
+            location.href = "html/goods.html?comId="+id;
+        });
+    }
     function render(obj){
         $(".content").html(
             $.map(obj, function (item, idx) {
-                return `<a href="">
-                            <img src="${item.com_img}" alt="">
-                            <p> <span id="a_name">${item.com_name}</span> <span id="a_price">${item.com_price}元</span></p>
-                        </a>`
+                return `<li>
+                            <a class="go_goods">
+                                <img src="${item.com_img}" alt="">
+                                <p> <span id="a_name">${item.com_name}</span> <span id="a_price">${item.com_price}元</span></p>
+                            </a>
+                        </li>`
             })
         );
+        tiaozhuang();
     }
 });

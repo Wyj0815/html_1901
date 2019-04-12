@@ -37,6 +37,11 @@ gulp.task("goods",function(){
     .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('./src/css'))
 })
+gulp.task("fixBox",function(){
+    return gulp.src("./src/sass/fixBox.scss")
+    .pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
+    .pipe(gulp.dest('./src/css'))
+})
 
 // 监听
 gulp.task("jt",function(){
@@ -59,4 +64,8 @@ gulp.task("jt5",function(){
 gulp.task("jt6",function(){
     return watch("./src/sass/goods.scss",gulp.series("goods"));
 })
+gulp.task("jt7",function(){
+    return watch("./src/sass/fixBox.scss",gulp.series("fixBox"));
+})
+
 

@@ -65,15 +65,15 @@ body {
   padding-top: 26px;
 }
 
-#content .content a:first-of-type {
+#content .content li:first-of-type a {
   width: 582px;
 }
 
-#content .content a:first-of-type p #a_name {
+#content .content li:first-of-type a p #a_name {
   width: 420px;
 }
 
-#content .content a {
+#content .content li a {
   float: left;
   width: 282px;
   border: 1px solid #ccc;
@@ -82,18 +82,18 @@ body {
   transition: 0.5s all;
 }
 
-#content .content a img {
+#content .content li a img {
   width: 100%;
   height: 261px;
 }
 
-#content .content a p {
+#content .content li a p {
   padding: 0 15px;
   overflow: hidden;
   line-height: 61px;
 }
 
-#content .content a p #a_name {
+#content .content li a p #a_name {
   float: left;
   width: 180px;
   text-overflow: ellipsis;
@@ -101,12 +101,12 @@ body {
   overflow: hidden;
 }
 
-#content .content a p #a_price {
+#content .content li a p #a_price {
   float: right;
   color: #CC0210;
 }
 
-#content .content a:hover {
+#content .content li a:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }

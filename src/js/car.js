@@ -1,6 +1,6 @@
 jQuery(function(){
-    $(".car_footer").load("index1.html #footer #fuwu");
-    $(".car_header").load("index1.html #header #topNav",function(){
+    $(".car_footer").load("index.html #footer #fuwu");
+    $(".car_header").load("index.html #header #topNav",function(){
         $.getScript("js/common.js",function(){  
             dl(); 
             var user = $("#login_name").text();
@@ -77,15 +77,17 @@ jQuery(function(){
         }
 
         function xhr(user){
-            $.ajax({
-                url: "api/ready_car.php",
-                data: {user:user},
-                success: function (res) {
-                    car_obj = JSON.parse(res);
-                    render(car_obj);
-                    operation(user);
-                }
-            });
+            if(user != ""){
+                $.ajax({
+                    url: "api/ready_car.php",
+                    data: {user:user},
+                    success: function (res) {
+                        car_obj = JSON.parse(res);
+                        render(car_obj);
+                        operation(user);
+                    }
+                });
+            }
         }
 
         function xhr2(page,user){
@@ -137,7 +139,7 @@ jQuery(function(){
             $(".xy_libox").html(
                 $.map(xyobj,function(item,idx){
                     return `<li data-id="${item.com_id}">
-                                <a href="">
+                                <a class="go_goods">
                                     <img src="${item.com_img}" alt="">
                                     <p>${item.com_name}</p>
                                 </a>

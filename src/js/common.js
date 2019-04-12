@@ -242,8 +242,8 @@ function dl(){
     $(".tuichu").on("click",function(){
         $("#quit").hide();
         $("#login").show();
-        Cookie.removeCookie("uname","/");  
-        return false;
+		Cookie.removeCookie("uname","/");
+		window.location.reload();
 	});
 	setInterval(function(){
         $(".friendLinkList").animate({top:"-32px"},1500,function(){
@@ -264,16 +264,30 @@ function dl(){
             $("#fixNav").hide();
         }
 	});
-	$.ajax({
-		url: "api/ready_car.php",
-		data: {user:cookName},
-		success: function (res) {
-            var obj = JSON.parse(res)
-            var count = 0;
-            $.each(obj,function(idx,item) { 
-                count += Number(item.count);
-            });
-            $(".count").text(count);
-		}
+	if(cookName != ""){
+		$.ajax({
+			url: "api/ready_car.php",
+			data: {user:cookName},
+			success: function (res) {
+				var obj = JSON.parse(res)
+				var count = 0;
+				$.each(obj,function(idx,item) { 
+					count += Number(item.count);
+				});
+				$(".count").text(count);
+			}
+		});
+	}
+	$(".fanghui").on("click",function(){
+		window.scrollTo(0,0);
+	});
+	$(".fixBox ul li a").hover(function(){
+		$(this).children(".tangchu").css({display:"block"});
+		$(this).children(".tangchu").stop(true).animate({opacity:1,right:"32px"},500);
+		
+	},function(){
+		$(this).children(".tangchu").stop(true).animate({opacity:0,right:"80px"},500,function(){
+			$(this).css({display:"none"});
+		});
 	});
 }

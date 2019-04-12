@@ -1,0 +1,68 @@
+.fixBox{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 100%;
+    background: #eaeaea;
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    ul{
+        padding-top: 120px;
+        li{
+            padding: 10px 0;
+            border-bottom: 1px solid #c8c8c8;
+            font-size: 13px;
+            a{
+                display: block;
+                font-size: 18px;
+                color: #c40000;
+                position: relative;
+                p{
+                    font-size: 14px;
+                    padding: 0 10px;
+                }
+                .tangchu{
+                    position: absolute;
+                    text-align: center;
+                    display: none;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 108px;
+                    background: #494949;
+                    right: 80px;
+                    top: 0;
+                    font-size: 12px;
+                    color: #fff;
+                    opacity: 0;
+                    span{
+                        position: absolute;
+                        right: -8px;
+                        top: 12px;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 16px;
+                        font-size: 27px;
+                        color: #494949;
+                    }
+                }
+            }
+            .fb_ewm{
+                .tangchu{
+                    width: 205px;
+                    img{
+                        width: 205px;
+                        height: 195px;
+                    }
+                    span{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .last{
+            padding-top: 100px;
+        }
+    }
+}

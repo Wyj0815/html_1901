@@ -1,6 +1,7 @@
 jQuery(function($){
-    $(".w_footer").load("index1.html #footer");
-    $(".w_header").load("index1.html #header",function(){
+    $("#fixBox").load("index.html .fixBox");
+    $(".w_footer").load("index.html #footer");
+    $(".w_header").load("index.html #header",function(){
         $.getScript("js/common.js",function(){  
             dl(); 
         }); 
@@ -72,6 +73,10 @@ jQuery(function($){
                     }
                 });
             });
+            $(".go_goods").on("click",function(){
+                var id = $(this).parents("li").attr("data-id");
+                location.href = "html/goods.html?comId="+id;
+            });
         }
         function xhr(page,type){
             $.ajax({
@@ -90,9 +95,9 @@ jQuery(function($){
         }
         function rander(obj){
             $(".pr_list").html(
-                $.map(obj, function (item, idx) {
+                $.map(obj, function (item, idx){
                     return `<li data-id="${item.com_id}">
-                                <a href="">
+                                <a class="go_goods">
                                     <img src="${item.com_img}" alt="">
                                     <p class="pr_name"><span>${item.com_name}</span><em>${item.com_recom}</em></p>
                                     <p class="pr_huodong"></p>

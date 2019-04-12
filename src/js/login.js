@@ -2,7 +2,6 @@ jQuery(function($){
     var show_num = [];
     draw(show_num);
     var $autologin = $("#autologin");
-
     var cook_uname = Cookie.getCookie("uname");
     var cook_upsd = Cookie.getCookie("upsd");
     console.log(cook_uname,cook_upsd);
@@ -14,7 +13,7 @@ jQuery(function($){
             success: function (res) {
                 if(res){
                     c
-                    location.href = '../index1.html?';
+                    location.href = '../index.html?';
                 }
             }
         });
@@ -41,7 +40,7 @@ jQuery(function($){
                             Cookie.removeCookie("upsd","/");
                         }
                         Cookie.setCookie('uname',_name,"",'/');
-                        location.href = '../index1.html?';
+                        location.href = '../index.html?';
                     }
                 }else{
                     console.log(!yanzheng);
@@ -57,7 +56,7 @@ jQuery(function($){
                                 Cookie.removeCookie("upsd","/");
                             }
                             Cookie.setCookie('uname',_name,"",'/');
-                            location.href = '../index1.html?';
+                            location.href = '../index.html?';
                         }
                     }
                 }

@@ -54,7 +54,7 @@ jQuery(function($){
                 success: function (res) {
                     if(res){
                         Cookie.setCookie('uname',$input.first().val(),'','/');
-                        location.href = '../index1.html?';
+                        location.href = '../index.html';
                     }
                 }
             });
