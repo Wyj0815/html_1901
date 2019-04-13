@@ -79,7 +79,7 @@ gulp.task("cssCompress",function(){
 // })
 //任务10：es6-es5
 gulp.task("es6Toes5",function(){
-    return gulp.src("./src/js/**/*.js")
+    return gulp.src("./src/**/*.js")
     .pipe(babel({
         'presets':['es2015']
     }))
@@ -89,7 +89,7 @@ gulp.task("es6Toes5",function(){
 
 //任务8：js合并（index.js）压缩（index.min.js）
 gulp.task("jsUglify",function(){
-    return gulp.src("./src/es5/*.js")
+    return gulp.src("./src/es5/**/*.js")
     .pipe(concat("index.js"))
     .pipe(gulp.dest("./dist/js"))
     .pipe(jsUglify())
