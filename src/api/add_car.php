@@ -5,7 +5,7 @@
     $count = isset($_GET["count"]) ? $_GET["count"] : 1; 
     $sql = "SELECT * FROM commodity WHERE com_id =".$id;
     $res = $con->query($sql);
-    $row = $res->fetch_all(MYSQLI_ASSOC);B
+    $row = $res->fetch_all(MYSQLI_ASSOC);
     $sql2 = "SELECT * FROM `".$user."` WHERE com_id =".$id;
     $res2 = $con->query($sql2);
     if($row != "" and $res2->num_rows <= 0){

@@ -24,9 +24,10 @@
   padding-left: 5px;
   padding-right: 5px;
   display: block;
+  margin-right: 10px;
 }
 
-#searchbox .searchbox .search-hassel a span {
+#searchbox .searchbox .search-hassel a .close_tj {
   background: #DD3F45;
   color: #FFFFFF;
   padding-left: 4px;
@@ -107,6 +108,10 @@
 
 #w_center .w_center .listbox-sort div .last {
   border-right: 0;
+}
+
+#w_center .w_center .listbox-sort div .active {
+  background: red;
 }
 
 #w_center .w_center .product_list {

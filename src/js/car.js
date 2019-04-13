@@ -148,6 +148,10 @@ jQuery(function(){
                             </li>`
                 })
             );
+            $(".go_goods").on("click",function(){
+                var id = $(this).parents("li").attr("data-id");
+                location.href = "html/goods.html?comId="+id;
+            });
         }
     });
 });

@@ -278,16 +278,18 @@ function dl(){
 			}
 		});
 	}
-	$(".fanghui").on("click",function(){
-		window.scrollTo(0,0);
-	});
-	$(".fixBox ul li a").hover(function(){
-		$(this).children(".tangchu").css({display:"block"});
-		$(this).children(".tangchu").stop(true).animate({opacity:1,right:"32px"},500);
-		
-	},function(){
-		$(this).children(".tangchu").stop(true).animate({opacity:0,right:"80px"},500,function(){
-			$(this).css({display:"none"});
+	if($(".fixBox")!= ""){
+		$(".fanghui").on("click",function(){
+			window.scrollTo(0,0);
 		});
-	});
+		$(".fixBox ul li a").hover(function(){
+			$(this).children(".tangchu").css({display:"block"});
+			$(this).children(".tangchu").stop(true).animate({opacity:1,right:"32px"},500);
+			
+		},function(){
+			$(this).children(".tangchu").stop(true).animate({opacity:0,right:"80px"},500,function(){
+				$(this).css({display:"none"});
+			});
+		});
+	}
 }

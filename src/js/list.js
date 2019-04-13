@@ -4,37 +4,104 @@ jQuery(function($){
     $(".w_header").load("index.html #header",function(){
         $.getScript("js/common.js",function(){  
             dl(); 
+            
         }); 
-
         xhr(1);
-        $(".zong").on("click",function(){
-            xhr(1,"zong");
+        paixu();
+
+        $(".jiu_name").on("click",function(){
+            if($(".search-jiu")){
+                $(".search-jiu").remove();
+            }
+            $(".search-hassel").append(
+                `<a class="search-jiu fl" id="search_1" data-hr="qingjiu"><em class="jiuName">${$(this).text()}</em>&nbsp;<span class="close_tj">✖</span></a> `
+            );
+            xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            $(".close_tj").on("click",function() {
+                $(this).parents("a").remove();
+                paixu();
+            });
         });
-        $(".xiao").on("click",function(){
-            xhr(1,"xiao");
-        });
-        $(".jia").on("click",function(){
-            xhr(1,"jia");
-        });
-        $(".ping").on("click",function(){
-            xhr(1,"ping");
-        });
-        $(".last").on("click",function(){
-            xhr(1,"last");
-        });
-    
+
+        $(".cd-table").on("click","a",function(){
+            if($(".search-selected")){
+                $(".search-selected").remove();
+            }
+            var aClass = $(this).attr("class");
+            if(aClass == "nfw1"){
+                $(".search-hassel").append(
+                    `<a class="search-selected fl" id="search_1" data-hr="qingjiu"><em><span class="sta_val">1</span>-<span class="over_val">199</span>元</em>&nbsp;<span class="close_tj">✖</span></a> `
+                );
+                 xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            }
+            if(aClass == "nfw2"){
+                $(".search-hassel").append(
+                    `<a class="search-selected fl" id="search_1" data-hr="qingjiu"><em><span class="sta_val">200</span>-<span class="over_val">399</span>元</em>&nbsp;<span class="close_tj">✖</span></a> `
+                );
+                 xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            }
+            if(aClass == "nfw3"){
+                $(".search-hassel").append(
+                    `<a class="search-selected fl" id="search_1" data-hr="qingjiu"><em><span class="sta_val">400</span>-<span class="over_val">599</span>元</em>&nbsp;<span class="close_tj">✖</span></a> `
+                );
+                 xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            }
+            if(aClass == "nfw4"){
+                $(".search-hassel").append(
+                    `<a class="search-selected fl" id="search_1" data-hr="qingjiu"><em><span class="sta_val">600</span><span class="over_val">元及以上</span></em>&nbsp;<span class="close_tj">✖</span></a> `
+                );
+                 xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            }
+            $(".close_tj").on("click",function() {
+                $(this).parents("a").remove();
+                paixu();
+            });
+            paixu();
+        })
+
+        function paixu(){
+            $("#com_id").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                xhr(1,"com_id",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            });
+            $("#com_name").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                xhr(1,"com_name",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            });
+            $("#com_price").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                xhr(1,"com_price",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            });
+            $("#com_eval").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                xhr(1,"com_eval",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            });
+            $("#time").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                xhr(1,"time",$(".search-selected .sta_val").text(),$(".search-selected .over_val").text(),$(".jiuName").text());
+            });
+        }
+
         $(".page").on("click","span",function(){
             var page = $(this).text();
-            xhr(page);
+            if($(".sort-box .active").attr("id")){
+                var a = $(".sort-box .active").attr("id");
+            }
+            xhr(page,a);
             $(document).scrollTop(0);
         });
         $(".xiangzuo").on("click",function(){
             var page = $(".active").text();
-            page--;
+            page--;         
             if(page == 0){
                 page = 1;
             }
-            xhr(page);
+            if($(".sort-box .active").attr("id")){
+                var a = $(".sort-box .active").attr("id");
+            }
+            xhr(page,a);
+            $($(".page span")[page-1]).addClass("active").siblings().removeClass("active");
+            
             $(document).scrollTop(0);
         });
         $(".xiangyou").on("click",function(){
@@ -44,7 +111,11 @@ jQuery(function($){
             if(page > count){
                 page = count;
             }
-            xhr(page);
+            if($(".sort-box .active").attr("id")){
+                var a = $(".sort-box .active").attr("id");
+            }
+            xhr(page,a);
+            $($(".page span")[page+1]).addClass("active").siblings().removeClass("active");
             $(document).scrollTop(0);
         });
     
@@ -78,18 +149,20 @@ jQuery(function($){
                 location.href = "html/goods.html?comId="+id;
             });
         }
-        function xhr(page,type){
+        function xhr(page,type,data1,data2,data3){
             $.ajax({
                 url: "api/list.php",
-                data: {page:page,qty:20,type:type},
+                data: {page:page,qty:8,type:type,start_val:data1,over_val:data2,jiu_val:data3},
                 success: function (res) {
                     obj = JSON.parse(res);
+                    // console.log(obj)
                     rander(obj.data);
                     $(".page").html("");
                     var count = Math.ceil(obj.count/obj.qty);
                     for($i=1;$i<=count;$i++){
                         $("<span/>").appendTo($(".page")).text($i).addClass($i==obj.page? "active" : "");
                     }
+                    $($(".page span")[page-1]).addClass("active").siblings().removeClass("active");
                 }
             });
         }

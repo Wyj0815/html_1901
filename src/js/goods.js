@@ -22,7 +22,6 @@ jQuery(function(){
         });
 
         $(".datu").mouseover(function(){
-            console.log($(".glassImg"));
             $(".datuBtn").show();
             $(".glassImg img").prop("src",$(this).children("img")[0].src);
             $(".glassImg").show();
@@ -77,12 +76,13 @@ jQuery(function(){
     }
     function addCar(comId){
         var user = $("#login_name").text();
-        $(".m_addCar").on("click",function(){ 
+        $(".m_addCar").on("click",function(){          
             var count = $(".c_count").val();
             $.ajax({
                 url: "api/add_car.php",
                 data: {id:comId,user:user,count:count},
                 success: function (res) {
+                    console.log(res)
                     if(res == 1){
                         $.ajax({
                             url: "api/ready_car.php",
